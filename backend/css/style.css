@@ -77,6 +77,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .sidebar .profile_info .profile_image{
@@ -92,6 +93,12 @@ header{
   margin-bottom: 20px;
 }
 
+.sidebar a:first-child { 
+  padding-left: 79px;
+}
+.sidebar a:first-child:hover { 
+   background-color: transparent;
+}
 .sidebar a{
   color: var(--text-secondary);
   display: block;
@@ -102,25 +109,27 @@ header{
   box-sizing: border-box;
   transition: 0.5s; 
 }
-
+ 
 .sidebar a:hover   {
   opacity: 0.5;
   background: var(--text-primary);
   
 }
-.sidebar a:hover i{
-  font-size: 1.2em;
+.sidebar a:hover i{ 
+  font-size: 1.2em; 
 }
+.activePg{
  
+ font-size: 1.2em;
+ background: var(--text-primary);
+ pointer-events: none;
+}
 
 .sidebar i{ 
   padding-right: 9px; 
   
 }
-.activePg{
-  font-size: 1.2em;
-  background: var(--text-primary);
-}
+
 
 label #sidebar_btn{
   z-index: 1;

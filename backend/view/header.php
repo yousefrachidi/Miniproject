@@ -22,13 +22,13 @@ if (!true) {
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
     rel="stylesheet"
   />  
-
+        <!--   style  -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
       <script src="../js/jquery.min.js" charset="utf-8"></script>  
   
       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -48,9 +48,11 @@ if (!true) {
     <!--header area end-->
     <!--mobile navigation bar start-->
     <div class="mobile_nav">
-      <div class="nav_bar">
-        <a href="profiel.php">
-        <img src="../images/logo.png" class="mobile_profile_image" alt=""> </a>
+      <div class="nav_bar" role="link" href="profiel.php"> 
+         <a href="profiel.php">
+            <img src="../images/logo.png" class="mobile_profile_image" alt="">
+         </a>
+            
         <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
@@ -64,10 +66,11 @@ if (!true) {
     <!--mobile navigation bar end-->
     <!--sidebar start-->
     <div class="sidebar">
-      <div class="profile_info">
-      <a href="profiel.php">
-        <img src="../images/logo.png" class="profile_image" alt="">
-        <h4>Admin </h4></a>
+      <div class="profile_info"   > 
+        <a href="profiel.php">
+          <img src="../images/logo.png" class="profile_image" alt="">
+         </a>
+        <h4>Admin </h4> 
       </div>
         <a href="dashboard.php" id="dash"><i class="fas   fa-desktop"></i><span>Dashboard</span></a>
         <a href="consultation.php" id="consl">  <i class="far  fa-folder-open"></i> <span>Consultation</span></a>  
