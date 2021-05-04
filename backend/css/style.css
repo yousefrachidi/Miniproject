@@ -2,8 +2,9 @@
 
   --text-primary: #19B3D3;
   --text-secondary: #fff; 
-  --bg-primary: #23232e;
-  --bg-secondary: #2f323a; 
+  --bg-primary: #22242A;
+  --bg-secondary: #2f323a;
+  --bg-text-primary :var(--text-primary); 
 }
 
 *{
@@ -15,9 +16,9 @@ body{
   font-family: "Roboto", sans-serif;
 } 
 header{
-  z-index: 1;
+  z-index: 6;
   position: fixed;
-  background: #22242A;
+  background: var(--bg-primary);
   padding: 20px;
   width: calc(100% - 0%);
   top: 0;
@@ -199,6 +200,7 @@ label #sidebar_btn:hover{
 
 .card{
 margin-top: 0.5em;
+padding: 10px;
 }
 
 .content .card p{

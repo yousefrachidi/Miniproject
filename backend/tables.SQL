@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* Nom de SGBD :  MySQL 5.0                                     */
-/* Date de création :  22/04/2021 02:13:36                      */
+/* Date de crï¿½ation :  22/04/2021 02:13:36                      */
 /*==============================================================*/
 
 
@@ -61,17 +61,17 @@ create table ORDONNANCE
 /*==============================================================*/
 /* Table : PTIENT                                               */
 /*==============================================================*/
-create table PTIENT
+create table Patient
 (
-   ID_PATIENT           int not null,
-   NOM                  char(25) not null,
-   PRENOM               char(25) not null,
-   E_MAIL               char(25) not null,
+   ID_PATIENT           int not null AUTO_INCREMENT,
+   NOM                  varchar(25) not null,
+   PRENOM               varchar(25) not null,
+   E_MAIL               varchar(25) not null,
    DATENAISSANCE        date,
-   CIN                  char(25) not null,
-   TELE                 char(25) not null,
-   MT_PASSE             char(255) not null,
-   SIXE                 char(25) not null,
+   CIN                  varchar(25) not null,
+   TELE                 varchar(25) not null,
+   MT_PASSE             varchar(255) not null,
+   SIXE                 varchar(25) not null,
    primary key (ID_PATIENT)
 );
 
@@ -92,13 +92,14 @@ create table RECEPTION
 /* Table : RENDEZ_VOUS                                          */
 /*==============================================================*/
 create table RENDEZ_VOUS
-(
+(  
+   ID_RENDEZ            int not null AUTO_INCREMENT,
    ID_PATIENT           int not null,
-   ID_RECEPTION         int not null,
-   ID_RENDEZ            int not null,
-   DATE_RENDEZ          timestamp,
-   TYPE                 char(25) not null,
-   primary key (ID_PATIENT, ID_RECEPTION)
+   ID_RECEPTION         int  , 
+   start_event          datetime,
+   end_event            datetime,
+   TYPE                 varchar(25)  ,
+   primary key (ID_RENDEZ )
 );
 
 alter table ORDONNANCE add constraint FK_ORDONNANCE foreign key (ID_ADMINE)

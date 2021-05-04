@@ -11,24 +11,31 @@ if (!true) {
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <title>Cabinie </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/logo.png" />
-    <title>Cabinie </title>
-    
+     
       <!--  Boostrap -->
      <link rel="stylesheet" href="../css/bootstrap.min.css"> 
-   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-    rel="stylesheet"
-  />  
+   <link  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"  />  
         <!--   style  -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-      <script src="../js/jquery.min.js" charset="utf-8"></script>  
+    <script src="../js/jquery.min.js" charset="utf-8"></script>  
   
       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+ 
+            <!-- calender -->
+    <link rel="stylesheet" href="../css/fullcalandar.css" />
+               <!-- Uikit -->
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+      
+   
   </head>
   <body>
 
