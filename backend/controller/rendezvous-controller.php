@@ -48,11 +48,9 @@ $dao = new DaoRendezvous();
 
                 $ID_RENDEZ = $_POST['ID_RENDEZ'];  
                 $start_event = $_POST['start_event'];
-                $end_event = $_POST['end_event']; 
-                $result = $dao->delete($ID_RENDEZ);
-                
-                   $dao->update($ID_RENDEZ ,$start_event , $end_event );
-                   echo 'Update  '.$ID_RENDEZ ; 
+                $end_event = $_POST['end_event'];  
+                $dao->update($ID_RENDEZ ,$start_event , $end_event );
+                echo 'Update  '.$ID_RENDEZ ; 
             }
          
 

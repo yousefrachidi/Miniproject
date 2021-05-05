@@ -39,7 +39,7 @@ class DaoRendezvous{
 
   public function getAll(){
       $stm = $this->cnx->prepare('SELECT r.* ,CONCAT (  p.PRENOM ," ",  p.NOM  ) as "title"    FROM rendez_vous r join patient p on p.CIN =r.CIN  ');
-      $stm->execute();
+     $stm->execute();
       $result = array();
       while ($row =   $stm->fetch(PDO::FETCH_ASSOC))
        { 
@@ -60,15 +60,13 @@ class DaoRendezvous{
 
    
   }
-  public function delete($ID_RENDEZ){
-
-    $stm = $this->cnx->prepare('DELETE FROM rendez_vous WHERE ID_RENDEZ = :ID_RENDEZ ');
-    $stm->bindvalue(':ID_RENDEZ' , $ID_RENDEZ );
-     $stm->execute();
-    
-    
-
-  } 
+    public function delete($ID_RENDEZ){
+        
+        $stm = $this->cnx->prepare('DELETE FROM rendez_vous WHERE ID_RENDEZ = :ID_RENDEZ ');
+        $stm->bindParam(':ID_RENDEZ' , $ID_RENDEZ ); 
+        $stm->execute();
+     
+    } 
 
 
 

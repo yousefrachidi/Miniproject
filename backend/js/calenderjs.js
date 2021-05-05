@@ -67,7 +67,7 @@ $(document).ready(function () {
        
             var id = event.id;
             $.ajax({
-                url: "../controller/rendezvous-controller.php?action=update ",
+                url: "../controller/rendezvous-controller.php?action=update",
                 type: "POST",
                 data: {
                     ID_RENDEZ: id ,   
@@ -76,7 +76,8 @@ $(document).ready(function () {
                 },
                 success: function () {
                     calendar.fullCalendar('refetchEvents');
-                    alert('Event Update');
+                     
+                    UIkit.notification({ message: 'Event Updated', status: 'success', timeout: 1000 });
                 }
             })
         },
@@ -88,7 +89,7 @@ $(document).ready(function () {
              
             var id = event.id;
             $.ajax({
-                url: "../controller/rendezvous-controller.php?action=update ",
+                url: "../controller/rendezvous-controller.php?action=update",
                 type: "POST",
                 data: {
                     ID_RENDEZ: id ,   
@@ -106,8 +107,9 @@ $(document).ready(function () {
         },
 
         eventClick: function (event) {
-
+               
             if (confirm("Are you sure you want to remove it?")) {
+                     
 
                 var id = event.id;
                 $.ajax({
@@ -123,8 +125,10 @@ $(document).ready(function () {
                         UIkit.notification({ message: 'Event Removed...', status: 'danger', timeout: 1000 });
                     }
                 });
+                 
 
             }
+           
         },
 
     });
