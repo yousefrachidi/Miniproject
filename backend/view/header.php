@@ -1,9 +1,9 @@
 <?php
 # test connected  
-if (!true) {
-    
-   header('location: ../login.html');
-}
+    if (!true) 
+    {
+         header('location: ../login.html');
+    }
 
 
 ?>
@@ -12,7 +12,7 @@ if (!true) {
 <html lang="en" dir="ltr">
 
 <head>
-    <title>Cabinie </title>
+    <title>Cabinie</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/logo.png" />

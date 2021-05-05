@@ -64,7 +64,7 @@ class DaoRendezvous{
 
     $stm = $this->cnx->prepare('DELETE FROM rendez_vous WHERE ID_RENDEZ = :ID_RENDEZ ');
     $stm->bindvalue(':ID_RENDEZ' , $ID_RENDEZ );
-    //$stm->execute();
+     $stm->execute();
     
     
 

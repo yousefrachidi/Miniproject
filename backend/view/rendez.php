@@ -24,17 +24,7 @@
                             <input class="uk-input " id="cin" value="DA1234"   type="text" placeholder="CIN ...">
                         </div>
                     </div> 
-
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="form-horizontal-select">CIN PATIENT</label>
-                        <div class="uk-form-controls">
-                            <select class="uk-select" id="form-horizontal-select"  > 
-                                <option> DA94298</option>
-                                <option> DA75589 </option>
-                            </select>
-                        </div>
-                    </div>
-
+ 
                     <div class="uk-margin">
                         <div class="uk-form-label">Type </div>
                         <div class="uk-form-controls uk-form-controls-text">

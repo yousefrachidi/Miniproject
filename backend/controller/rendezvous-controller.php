@@ -22,8 +22,7 @@ $dao = new DaoRendezvous();
              if (!$result) {
                  echo 'Erreur'; 
              }
-             else echo 'succes !!';
-                
+             else echo 'succes !!'; 
 
           }
          break;

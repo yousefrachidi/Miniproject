@@ -3,13 +3,15 @@
 include_once 'config.php';
 include '../model/Patient.php';
 
+
+
 class DaoPatient{
 
     private  $cnx  ; 
     public function __construct()
     {
-        $dao = new Connfig();
-        $this->cnx =$dao->connex() ;
+         $dao = new Connfig();
+         $this->cnx =$dao->connex() ; 
         
     }
  

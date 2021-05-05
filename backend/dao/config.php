@@ -2,6 +2,7 @@
  
 class Connfig{
 
+   
    public function connex()
    {
       try {
