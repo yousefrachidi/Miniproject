@@ -70,6 +70,8 @@
     $(function(){
         $('#rende').addClass("activePg");  
           
+    //romove scroll 
+     $('.fc-scroller').css({'overflow':'hidden','height':  "initial"});
        
     });
    

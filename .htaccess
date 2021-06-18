@@ -1,0 +1,18 @@
+RewriteEngine on 
+
+Options +MultiViews
+
+#Prevent Directory Listing   desactive list des fichies 
+  Options -Indexes
+
+RewriteRule   ^consultation$        backend/view/consultation.php 
+RewriteRule   ^dashboard$           backend/view/dashboard.php 
+RewriteRule   ^rendez$              backend/view/rendez.php    
+RewriteRule   ^reception$           backend/view/reception.php   
+RewriteRule   ^profiel$             backend/view/profiel.php    
+RewriteRule    ^[A-Za-z0-9]*$       backend/view/dashboard.php   
+
+  # Echo Error Message  
+ErrorDocument 403 "<h2 align='center' > Hello You Cant Enter This Directory </h2> "
+ErrorDocument 404 "<h2 align='center' > Hello This Page Not Existe ! </h2> "
+

@@ -18,7 +18,7 @@ include '../view/header.php';
  
   <!-- add class for element A -->
   <script> 
-  $('#recep').addClass("activePg");  
+  $('#dash').addClass("activePg");  
  </script> 
  
 

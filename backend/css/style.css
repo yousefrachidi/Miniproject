@@ -204,8 +204,7 @@ padding: 10px;
 }
 
 .content .card p{
-  background: var(--text-secondary);
-  
+  background: var(--text-secondary); 
   padding: 15px;
   margin-bottom: 10px;
   font-size: 14px;

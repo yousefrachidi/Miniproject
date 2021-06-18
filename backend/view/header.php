@@ -73,15 +73,15 @@
     <!--sidebar start-->
     <div class="sidebar">
         <div class="profile_info">
-            <a href="profiel.php">
+            <a href="profiel">
                 <img src="../images/logo.png" class="profile_image" alt="">
             </a>
             <h4>Admin </h4>
         </div>
-        <a href="dashboard.php" id="dash"><i class="fas   fa-desktop"></i><span>Dashboard</span></a>
-        <a href="consultation.php" id="consl"> <i class="far  fa-folder-open"></i> <span>Consultation</span></a>
-        <a href="rendez.php" id="rende"><i class="fas fa-calendar-check"></i> <span>Rendez-vous</span></a>
-        <a href="reception.php" id="recep"><i class="fas fa-user-plus"></i></i><span>Reception</span></a>
+        <a href="dashboard" id="dash"><i class="fas   fa-desktop"></i><span>Dashboard</span></a>
+        <a href="consultation" id="consl"> <i class="far  fa-folder-open"></i> <span>Consultation</span></a>
+        <a href="rendez" id="rende"><i class="fas fa-calendar-check"></i> <span>Rendez-vous</span></a>
+        <a href="reception" id="recep"><i class="fas fa-user-plus"></i></i><span>Reception</span></a>
         <a href="#" id="r"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
     </div>
     <!--sidebar end-->

@@ -105,13 +105,14 @@ $(document).ready(function () {
                 }
             });
         },
+        
 
         eventClick: function (event) {
-               
-            if (confirm("Are you sure you want to remove it?")) {
-                     
 
-                var id = event.id;
+            UIkit.modal.confirm('Are you sure you want to remove '+event.title +" ?").then(()=>{
+                //click ok
+                 var id = event.id;
+                 
                 $.ajax({
                     url: "../controller/rendezvous-controller.php?action=delete",
                     type: "POST",
@@ -125,14 +126,26 @@ $(document).ready(function () {
                         UIkit.notification({ message: 'Event Removed...', status: 'danger', timeout: 1000 });
                     }
                 });
-                 
+
+            },
+            function(){
+                // click cancel
+                
 
             }
-           
+            
+            ) ;
+                 
+               
+              
+               
+                 
+ 
         },
 
     });
 
+    
 
 
     $('.uk-close').on('click', function () {
@@ -149,6 +162,9 @@ $(document).ready(function () {
         ajouteRen(type_, cin_);
 
     });
+
+    //romove scroll 
+    $('tbody .fc-scroller').css({'color':'red','height':  "1000vh"});
 
 
 });
